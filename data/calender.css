@@ -1,0 +1,42 @@
+body{
+  width: 900px;
+  margin: 50px 0 0 170px;
+  font-size: 30px;
+}
+
+table.calendar{
+  width: 100%;
+}
+
+table.calendar th, table.calendar td{
+  padding: 8px;
+  background-color: #FFF;
+  text-align: center;
+  border: 1px solid #CCC;
+}
+
+table.calendar th:first-of-type, table.calendar td:first-of-type{
+  background-color: #ffefef;
+  color: #FF0000;
+  font-weight: bold;
+}
+
+
+table.calendar th:last-of-type, table.calendar td:last-of-type{
+  background-color: #ededff;
+  color: #0000FF;
+  font-weight: bold;
+}
+
+
+table.calendar td.today{
+  background-color: #fbffa3;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+textarea{
+  resize: none;
+}
