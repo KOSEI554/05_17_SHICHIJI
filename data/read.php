@@ -1,8 +1,5 @@
 <?php
 $str = "";
-// function csv(){
-//   $form = 
-// };
 
 $file = fopen("form.csv" ,"r");
 
@@ -13,6 +10,7 @@ if ($file) {
     $str .="<tr><td>{$line}</td></tr>";
   }
 }
+
 flock($file, LOCK_UN);
 
 fclose($file);
@@ -32,7 +30,7 @@ fclose($file);
   <a href="input.php">新規作成</a>
   <a href="calender.php">カレンダーに戻る</a>
   <fieldset>
-    <legend>予定メモ</legend>
+    <legend class= "size">予定メモ</legend>
     <table>
       <thead>
         <!-- <tr>
@@ -41,7 +39,7 @@ fclose($file);
           <th>やること</th>
         </tr> -->
       </thead>
-      <tbody>
+      <tbody class="memo">
       <?= $str?>
       </tbody>
     </table>

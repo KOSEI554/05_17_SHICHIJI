@@ -2,6 +2,7 @@ body{
   width: 900px;
   margin: 50px 0 0 170px;
   font-size: 30px;
+  height: 800px;
 }
 
 table.calendar{
@@ -39,4 +40,11 @@ a {
 }
 textarea{
   resize: none;
+}
+.size{
+  width: 600px;
+  height: 500px;
+}
+.memo{
+  overflow: auto;
 }
